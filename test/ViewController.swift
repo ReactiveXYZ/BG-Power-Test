@@ -57,8 +57,8 @@ class ViewController: UIViewController {
     
     private func canProceed() -> Bool {
         
-        //return self.interval != 0 && self.span != 0 && self.taskIndex != -1
-        return true
+        return self.interval != 0 && self.span != 0 && self.taskIndex != -1
+        //return true
     }
     
     private func getSelectedTask() -> AnyObject {
