@@ -80,7 +80,7 @@ class StatusViewController: UIViewController, MFMailComposeViewControllerDelegat
             // add basic header data
             mailComposer.setSubject("FST Power consumption test result")
             
-            mailComposer.setMessageBody("Device Model: \(UIDevice.current.localizedModel) <br/> Task Type: \(self.currentTaskType) <br/> Task Interval: \(self.currentTask?.getIntervalInMins()) mins <br/> Task Span: \(self.currentTask?.getSpanInHours()) hours <br/>Battery deducted: \(self.batteryConsumed)", isHTML: true)
+            mailComposer.setMessageBody("Device Model: \(UIDevice.current.localizedModel) <br/> Task Type: \(self.currentTaskType) <br/> Task Interval: \(self.currentTask?.getIntervalInMins()) mins <br/> Task Span: \(self.currentTask?.getSpanInHours()) hours <br/>Battery deducted: \(self.batteryConsumed * 100)%", isHTML: true)
             
             mailComposer.setToRecipients(["jackie@reactive.xyz"])
             
@@ -158,7 +158,7 @@ class StatusViewController: UIViewController, MFMailComposeViewControllerDelegat
         self.batteryConsumed = self.batteryConsumed - (UIDevice.current.batteryLevel)
         
         // show battery deduction
-        self.batteryConsumptionLabel.text = "Battery deducted " + String(self.batteryConsumed) + "%"
+        self.batteryConsumptionLabel.text = "Battery deducted " + String(self.batteryConsumed * 100)  + "%"
         
         // show email button
         self.emailDataBtn.isHidden = false

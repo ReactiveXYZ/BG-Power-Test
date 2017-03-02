@@ -19,31 +19,34 @@ class HeavyTask : BaseTask {
     
     override func runTask() -> Void {
         
-        // send HTTP request to get random quotes
-        let urlString = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback="
-        
-        let url = URL(string: urlString)
-        
-        var request = URLRequest(url: url!)
-        
-        request.httpMethod = "GET"
-        
-        URLSession.shared.dataTask(with: request) {data, response, interval in
+        for _ in 1...5 {
             
-            do {
+            // send HTTP request to get random quotes
+            let urlString = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback="
+            
+            let url = URL(string: urlString)
+            
+            var request = URLRequest(url: url!)
+            
+            request.httpMethod = "GET"
+            
+            URLSession.shared.dataTask(with: request) {data, response, interval in
                 
-                let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [[String : AnyObject]]
+                do {
+                    
+                    let json = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [[String : AnyObject]]
+                    
+                    print(json[0]["content"] ?? "NOTHING???")
+                    
+                } catch let error {
+                    
+                    print(error)
+                    
+                }
                 
-                print(json[0]["content"] ?? "NOTHING???")
-                
-            } catch let error {
-            
-                print(error)
-            
-            }
-            
-        }.resume()
-        
+                }.resume()
+
+        }
         
         
     }

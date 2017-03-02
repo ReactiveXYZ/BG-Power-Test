@@ -24,9 +24,7 @@ class testTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results
-        let task: BaseTask = LightTask(interval: 1, span: 1)
-        
-        task.run()
+       
     }
     
     func testPerformanceExample() {
