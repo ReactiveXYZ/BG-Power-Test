@@ -12,11 +12,6 @@ import Foundation
 /// Heavy Task: Do network requests
 class HeavyTask : BaseTask {
     
-    override init(interval: Int, span: Int) {
-        
-        super.init(interval: interval, span: span)
-    }
-    
     override func runTask() -> Void {
         
         for _ in 1...5 {

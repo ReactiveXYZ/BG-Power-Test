@@ -70,6 +70,8 @@ class ViewController: UIViewController {
                 return MediumTask(interval: self.interval, span: self.span)
             case 2:
                 return HeavyTask(interval: self.interval, span: self.span)
+            case 3:
+                return SimulatedTask(interval: self.interval, span: self.span)
             default:
                 break
         }
@@ -123,7 +125,7 @@ class ViewController: UIViewController {
         
         self.taskPickerView.pickerType = .StringPicker
         
-        let data:[String] = ["light (console log)", "medium (arithmetics)", "heavy (http request)"]
+        let data:[String] = ["light (console log)", "medium (arithmetics)", "heavy (http request)", "simulated (MC Framework)"]
         
         self.taskPickerView.stringPickerData = data
         

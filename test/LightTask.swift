@@ -12,13 +12,6 @@ import Foundation
 /// Light task: Simply print a console log
 class LightTask : BaseTask {
     
-    
-    override init(interval: Int, span: Int) {
-        
-        super.init(interval: interval, span: span)
-        
-    }
-
     override func runTask() -> Void {
         
         print("I AM PRINTTING A BUNCH OF LOGS!!!")

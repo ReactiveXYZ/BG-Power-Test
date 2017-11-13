@@ -12,12 +12,6 @@ import Foundation
 /// Medium Task: Do CPU arithmetics
 class MediumTask : BaseTask {
 
-    override init(interval: Int, span: Int) {
-        
-        super.init(interval: interval, span: span)
-        
-    }
-    
     override func runTask() -> Void {
         
         // some random calculations

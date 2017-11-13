@@ -31,6 +31,7 @@
 		8C1314BC1E637C70000D12A1 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7F21671D72535400D0A65D /* Background.swift */; };
 		8C1314BD1E637C74000D12A1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1314AD1E628E15000D12A1 /* Logger.swift */; };
 		8C1314C01E63A017000D12A1 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1314BF1E63A017000D12A1 /* MessageUI.framework */; };
+		8CF1FD4A1FB92F43001766FA /* SimulatedTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF1FD491FB92F43001766FA /* SimulatedTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		8C1314B21E629EDD000D12A1 /* AAPickerView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AAPickerView+Helper.swift"; sourceTree = "<group>"; };
 		8C1314B51E62A113000D12A1 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		8C1314BF1E63A017000D12A1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8CF1FD491FB92F43001766FA /* SimulatedTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				8C1314A71E628166000D12A1 /* LightTask.swift */,
 				8C1314A91E6285BB000D12A1 /* MediumTask.swift */,
 				8C1314AB1E628818000D12A1 /* HeavyTask.swift */,
+				8CF1FD491FB92F43001766FA /* SimulatedTask.swift */,
 			);
 			name = Tasks;
 			sourceTree = "<group>";
@@ -301,7 +304,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Yaro;
 				TargetAttributes = {
 					5BC607ED1D7146AC00D5C97A = {
@@ -380,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C1314B41E629EDD000D12A1 /* AAPickerView+Helper.swift in Sources */,
+				8CF1FD4A1FB92F43001766FA /* SimulatedTask.swift in Sources */,
 				8C1314B31E629EDD000D12A1 /* AAPickerView.swift in Sources */,
 				5B7F21681D72535400D0A65D /* Background.swift in Sources */,
 				8C1314AC1E628818000D12A1 /* HeavyTask.swift in Sources */,
@@ -461,14 +465,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -508,14 +518,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
